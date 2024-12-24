@@ -9,7 +9,7 @@ function App() {
     const [sortOrder, setSortOrder] = useState("asc");
 
     useEffect(() => {
-        fetch("https://gentle-bird-671e.aryankrishna2024.workers.dev/")
+        fetch("http://localhost:5000/api/candidates")
             .then((response) => response.json())
             .then((data) => {
                 setCandidates(data);
